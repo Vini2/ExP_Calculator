@@ -14,5 +14,5 @@ function divide(a, b) {
     if(Number(a)/Number(b)==Infinity){
         return 'Division by zero error';
     }
-    return Number(a) / Number(b);
+    return (Number(a) / Number(b)).toFixed(5);
 }
