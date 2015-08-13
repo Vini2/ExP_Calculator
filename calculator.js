@@ -1,18 +1,18 @@
 function plus(a, b) {
-    return a + b;
+    return Number(a) + Number(b);
 }
 
 function minus(a, b) {
-    return a - b;
+    return Number(a) - Number(b);
 }
 
 function multiply(a, b) {
-    return a * b;
+    return Number(a) * Number(b);
 }
 
 function divide(a, b) {
-    if(a/b==Infinity){
-        return 'Errot';
+    if(Number(a)/Number(b)==Infinity){
+        return 'Division by zero error';
     }
-    return a / b;
+    return Number(a) / Number(b);
 }

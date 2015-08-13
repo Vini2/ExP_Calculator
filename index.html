@@ -17,8 +17,28 @@
 		<script type="text/javascript">
 			document.getElementById('calculatebtn').onclick = function(e){
 				var input = document.getElementById('input_area').value;
-				document.getElementById('result').innerHTML = eval(input);
+                                
+                                if(input.includes("+")){
+                                    var str = input.split("+");
+                                    document.getElementById('result').innerHTML = plus(str[0],str[1]);
+                                }
+                                else if(input.includes("-")){
+                                    var str = input.split("-");
+                                    document.getElementById('result').innerHTML = minus(str[0],str[1]);
+                                }
+                                else if(input.includes("*")){
+                                    var str = input.split("*");
+                                    document.getElementById('result').innerHTML = multiply(str[0],str[1]);
+                                }
+                                else if(input.includes("/")){
+                                    var str = input.split("/");
+                                    document.getElementById('result').innerHTML = divide(str[0],str[1]);
+                                }
+                                
+				//document.getElementById('result').innerHTML = eval(input);
 			}
+                        
+                        
 		</script>
                 
                 
