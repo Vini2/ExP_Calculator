@@ -11,3 +11,7 @@ QUnit.test("Testing Plus function", function(assert) {
 QUnit.test("Testing Plus function with failing", function(assert) {
   assert.equal(5, plus(2, 2), "2 + 2 is 5");
 });
+
+QUnit.test("Testing Divide function", function(assert) {
+  assert.equal(Infinity, divide(2, 0), "2 / 0 is Infinity");
+});

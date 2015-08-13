@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 
-
 <html>
 	
-<head>
-  
+        <head>
 		<meta charset="utf-8">
-  
 		<title>Calculator</title>
-
 	</head>
-
 	
-<body>
-  
+        <body>
 		<h1>My Calculator</h1>
-  
 		<input type="text" id="input_area"/>
-  
 		<label id="result">--</label>
-  
-		<br>
-  
+                <br> <br>
 		<input type="Submit" id="calculatebtn" value="Calculate">
-  
-		
 		<script src="calculator.js"></script>
-  
 		<script type="text/javascript">
-    
 			document.getElementById('calculatebtn').onclick = function(e){
-	
 				var input = document.getElementById('input_area').value;
-        
 				document.getElementById('result').innerHTML = eval(input);
-    
-
 			}
-  
 		</script>
+                
+                
+                <input type="Submit" id="clearbtn" value="Clear">
 
+                <script type="text/javascript">
+			document.getElementById('clearbtn').onclick = function(e){
+				document.getElementById('input_area').value = '';
+				document.getElementById('result').innerHTML = '';
+			}
+		</script>
+                
 	</body>
